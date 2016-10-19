@@ -1,0 +1,62 @@
+﻿    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h2 class="font-bold">Welcome to Growller</h2>
+
+                <p>
+                    Smart growth is an urban planning and transportation theory that concentrates growth in compact walkable urban centers to avoid sprawl.
+                </p>
+
+                <p>
+                    The term 'smart growth' is particularly used in North America. In Europe and particularly the UK, the terms 'Compact City' or 'urban intensification' have often been used to describe similar concepts, which have influenced government planning policies in the UK, the Netherlands and several other European countries.
+                </p>
+
+                <p>
+                    Smart growth values long-range, regional considerations of sustainability over a short-term focus. Its sustainable development goals are to achieve a unique sense of community and place; expand the range of transportation, employment, and housing choices; equitably distribute the costs and benefits of development; preserve and enhance natural and cultural resources; and promote public health.
+                </p>
+
+                <p>
+                    <small>From Wikipedia, the free encyclopedia.</small>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="ibox-content">
+                    <%= form_tag sessions_path do %>
+					<%= notice %></p>
+                        <div class="form-group">
+							<%= text_field_tag :email, params[:email], class: 'form-control', placeholder: 'email@example.com' %>
+                        </div>
+                        <div class="form-group">
+                            <%= password_field_tag :password, params[:password], class: 'form-control', placeholder: 'Password' %>
+                        </div>
+						<p><%= submit_tag 'Login', :class => 'btn btn-primary block full-width m-b'%></p>
+
+                        <a href="#">
+                            <small>Forgot password?</small>
+                        </a>
+
+                        <p class="text-muted text-center">
+                            <small>Do not have an account?</small>
+                        </p>
+                        <a class="btn btn-sm btn-white btn-block" href="sign_up">Create an account</a>
+                    <% end %>
+                    <p class="m-t">
+                        <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Copyright Example Company
+            </div>
+            <div class="col-md-6 text-right">
+                <small>© 2014-2015</small>
+            </div>
+        </div>
+    </div>
+
+
